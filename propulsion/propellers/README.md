@@ -13,9 +13,24 @@ The most basic model for a propeller includes a hub in the centre for coupling w
 ![image](https://user-images.githubusercontent.com/62014208/210196330-63077bf6-44d2-4a2d-8aea-9e887278a585.png)
 
 #### The Blades ####
-A sketch was then made of the outline of the propeller on a work plane which was tangential to the outer face of the hub. This sketch was then projected onto the outer face of the hub, and extruded out to create a simple, angled blade. Once this singular blade had been created, a circular pattern of the blade was created, around the centre of the hub. With some filletting of sharp edges for ease of handling and a reduction in stress concentration, the preliminary design for the basic, angled propeller was complete. This model looks as follows:  
+A sketch was then made of the outline of the propeller on a work plane which was tangential to the outer face of the hub. This sketch was then projected onto the outer face of the hub, and extruded out to create a simple, angled blade. Once this singular blade had been created, a circular pattern of the blade was created, around the centre of the hub. With some filletting of sharp edges for ease of handling, a reduction in stress concentration, and to reduce the drag of the propeller while in operation, the preliminary design for the basic, angled propeller was complete. This model looks as follows:  
 
 ![image](https://user-images.githubusercontent.com/62014208/210198481-a9502eab-a1e2-41fe-83b3-d2f91f2468cc.png)
+
+#### Stress Analysis ####
+
+##### Static #####
+A static stress analysis on the propeller was conducted to verify that the propeller can withstand the weight of the drone (expecting four propellers with ~20 kg of weight for the drone in total so ~5 kg on each propeller). This stress analysis yields the following results:  
+
+![stress](https://user-images.githubusercontent.com/62014208/211175454-a6818e53-1308-4b4d-98d3-042c7ef0a5ce.PNG)
+![stress_1](https://user-images.githubusercontent.com/62014208/211175455-b18be9f4-c324-46e0-a148-0800c354a0ba.PNG)
+
+Where the highest stress concentrates on the filleted edge of the fixed side of the hub. However, even the highest stress through the propeller is significantly less than the yield strength of ABS plastic (the material I would use if 3D printed ~13-65 MPa). The deformation of the propeller during this static stress analysis is shown below:  
+
+![displacement](https://user-images.githubusercontent.com/62014208/211175997-ff196cf2-f747-4291-b168-1833cdae229c.PNG)
+![displacement_1](https://user-images.githubusercontent.com/62014208/211175990-7baaa3c8-a583-4ff4-9611-377ed3723e7b.PNG)
+
+Where the max displacement is at the face of the non-fixed side of the hub, which is signficantly less than the total width of the hub (10 mm).
 
 ## Progress ##
 The current progress for the propellers includes:  
