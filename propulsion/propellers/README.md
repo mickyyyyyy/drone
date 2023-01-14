@@ -32,6 +32,17 @@ Where the highest stress concentrates on the filleted edge of the fixed side of 
 
 Where the max displacement is at the face of the non-fixed side of the hub, which is signficantly less than the total width of the hub (10 mm).
 
+##### Modal #####
+A modal stress analysis on the propeller was conducted to understand at which rotational velocities the propeller would be susceptible to resonance. Placing a pinneed constraint on the inner face of the hub produces the following results:  
+
+![displacement](https://user-images.githubusercontent.com/62014208/212447196-90e34244-5376-49d4-997e-e92a7b6dbe87.PNG)
+
+With such large displacements when operating near resonant frequencies (deflections between 50-60% of the hub's width), these propellers will not be able to operate properly at such speeds. These modal frequencies are as follows:  
+
+![natural_frequencies](https://user-images.githubusercontent.com/62014208/212447317-178ee4f1-3360-4217-b2d8-4e3550d5258e.PNG)
+
+Note that 0 Hz is there since the propeller is not fixed, however, operating the propellers at 0 Hz will not actually result in resonance. Looking at the other modal frequencies, the propellers shouldn't be operated anywhere near the 186.70 - 188.37 Hz ranges, thus, the propellers should only operate from 0 - 130 Hz (using a factor of 0.7 of the lowest modal frequency to determine the upper bound for the operational frequency.
+
 ## Progress ##
 The current progress for the propellers includes:  
   
